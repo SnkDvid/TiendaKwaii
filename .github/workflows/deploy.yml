@@ -16,7 +16,7 @@ jobs:
     - name: Set up PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.2' # Cambia esto a la versión de PHP que uses
+        php-version: '8.4' # Cambia esto a la versión de PHP que uses
         extensions: mbstring, pdo, pdo_mysql
 
     - name: Install Composer dependencies
