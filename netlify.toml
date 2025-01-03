@@ -1,5 +1,5 @@
 [build]
-  command = "apt-get update && apt-get install -y libmysqlclient-dev && docker-php-ext-install pdo_mysql && composer install && npm run build && php artisan migrate --force"
+  command = "./install-php-extensions.sh && composer install && npm run build && php artisan migrate --force"
   publish = "public"
 
 [context.production.environment]
