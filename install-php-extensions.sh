@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Install pdo_mysql extension
+# Install necessary packages
 apt-get update && apt-get install -y libmysqlclient-dev
-pecl install pdo_mysql
-docker-php-ext-enable pdo_mysql
+
+# Install pdo_mysql extension
+docker-php-ext-install pdo_mysql

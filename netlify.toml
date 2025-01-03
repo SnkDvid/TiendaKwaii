@@ -1,5 +1,5 @@
 [build]
-  command = "./install-php-extensions.sh && composer install && npm run build && php artisan migrate --force"
+  command = "docker build -t my-app . && docker run my-app"
   publish = "public"
 
 [context.production.environment]
